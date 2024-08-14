@@ -1,5 +1,5 @@
 public class Doctor {
-
+    // Attributos
     static int id = 0; // Autoincrement
     String name;
     String speciality;
@@ -11,10 +11,14 @@ public class Doctor {
     * */
     Doctor() {
         System.out.println("Construyendo el objeto Doctor");
-        id++;
     }
-    Doctor(String name) {
+
+    // Me creo un constructor diferente a mi gusto.
+    Doctor(String name, String speciality) {
+        id++;
         System.out.println("El nombre del Doctor asignado es: " + name);
+        this.name = name;
+        this.speciality = speciality;
     }
 
     // Comportamientos
